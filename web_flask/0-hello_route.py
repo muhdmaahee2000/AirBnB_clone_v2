@@ -9,9 +9,9 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route("/", strict_slashes=False)
+@app.route('/airbnb-onepage/')
 def hello_hbnb():
-    """Displays 'Hello HBNB!'"""
+    #prints helo
     return "Hello HBNB!"
 
 
