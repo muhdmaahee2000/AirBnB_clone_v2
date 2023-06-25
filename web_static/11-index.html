@@ -1,0 +1,31 @@
+i<!DOCTYPE html>
+<html>
+<head>
+  <title>Changing Background Color</title>
+  <style>
+.container {
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    body {
+      background-color: #000000;
+      transition: background-color 0.5s ease;
+    }
+  </style>
+  <script>
+    function changeBackgroundColor() {
+      var colors = ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"];
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+    
+    setInterval(changeBackgroundColor, .9999); // Change color every 2 second;
+  </script>
+</head>
+<body>
+</body>
+</html>
+
